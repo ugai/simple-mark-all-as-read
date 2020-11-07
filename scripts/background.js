@@ -4,11 +4,23 @@ async function markReadCurrentFolder() {
         "currentWindow": true,
         "lastFocusedWindow": true
     });
-    let queryResults = await messenger.messages.query({
-        "folder": mailTabs[0].displayedFolder,
+    let currentFolder = mailTabs[0].displayedFolder;
+
+    console.dir(currentFolder);
+
+    let page = await messenger.messages.query({
+        "folder": currentFolder,
         "unread": true
     });
-    let unreadMessages = queryResults.messages;
+    markReadMessages(page.messages);
+
+    while (page.id) {
+        page = await messenger.messages.continueList(page.id);
+        markReadMessages(page.messages);
+    }
+}
+
+async function markReadMessages(unreadMessages) {
     for (let i = 0; i < unreadMessages.length; i++) {
         messenger.messages.update(unreadMessages[i].id, {
             "read": true
