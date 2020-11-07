@@ -1,0 +1,5 @@
+{
+    "extensionName": { "message": "Simple Mark All as Read" },
+    "extensionDescription": { "message": "Just mark all messages as read in current folder." },
+    "browserActionDefaultTitle": { "message": "Mark Folder Read" }
+}
