@@ -1,4 +1,4 @@
-async function unreadDisplayedFolder() {
+async function markReadCurrentFolder() {
     let mailTabs = await messenger.mailTabs.query({
         "active": true,
         "currentWindow": true,
@@ -17,5 +17,5 @@ async function unreadDisplayedFolder() {
 }
 
 messenger.browserAction.onClicked.addListener((_tab) => {
-    unreadDisplayedFolder();
+    markReadCurrentFolder();
 });
