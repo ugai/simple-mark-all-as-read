@@ -6,8 +6,6 @@ async function markReadCurrentFolder() {
     });
     let currentFolder = mailTabs[0].displayedFolder;
 
-    console.dir(currentFolder);
-
     let page = await messenger.messages.query({
         "folder": currentFolder,
         "unread": true
