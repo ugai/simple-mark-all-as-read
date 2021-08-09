@@ -1,5 +1,11 @@
 {
-    "extensionName": { "message": "Simple Mark All as Read" },
-    "extensionDescription": { "message": "Just mark all messages as read in current folder." },
-    "browserActionDefaultTitle": { "message": "Mark Folder Read" }
+    "extensionName": {
+        "message": "Simple Mark All as Read"
+    },
+    "extensionDescription": {
+        "message": "Add the toolbar button that just marks all messages as read in the current folder."
+    },
+    "browserActionDefaultTitle": {
+        "message": "Mark Folder Read"
+    }
 }

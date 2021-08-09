@@ -13,14 +13,18 @@
     },
     "browser_action": {
         "default_title": "__MSG_browserActionDefaultTitle__",
-        "theme_icons": [{
-            "light": "images/heroicons/mail-open-white.svg",
-            "dark": "images/heroicons/mail-open-black.svg",
-            "size": 32
-        }]
+        "theme_icons": [
+            {
+                "light": "images/heroicons/mail-open-white.svg",
+                "dark": "images/heroicons/mail-open-black.svg",
+                "size": 32
+            }
+        ]
     },
     "background": {
-        "scripts": ["scripts/background.js"]
+        "scripts": [
+            "scripts/background.js"
+        ]
     },
     "permissions": [
         "accountsRead",

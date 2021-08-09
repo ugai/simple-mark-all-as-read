@@ -1,5 +1,11 @@
 {
-    "extensionName": { "message": "Simple Mark All as Read" },
-    "extensionDescription": { "message": "フォルダーのメッセージをすべて既読にするボタンを追加します。" },
-    "browserActionDefaultTitle": { "message": "フォルダーを既読にする" }
+    "extensionName": {
+        "message": "Simple Mark All as Read"
+    },
+    "extensionDescription": {
+        "message": "フォルダーのメッセージをすべて既読にするツールバーボタンを追加します。"
+    },
+    "browserActionDefaultTitle": {
+        "message": "フォルダーを既読にする"
+    }
 }
