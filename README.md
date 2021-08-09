@@ -5,6 +5,6 @@ Just mark all messages as read in current folder.
 
 ![screenshot](ss.png)
 
-# requirements
+## requirements
 
 Thunderbird >= 78.0

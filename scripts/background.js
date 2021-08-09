@@ -10,22 +10,22 @@ async function markReadCurrentFolder() {
         "folder": currentFolder,
         "unread": true
     });
-    markReadMessages(page.messages);
+    await markReadMessages(page.messages);
 
     while (page.id) {
         page = await messenger.messages.continueList(page.id);
-        markReadMessages(page.messages);
+        await markReadMessages(page.messages);
     }
 }
 
 async function markReadMessages(unreadMessages) {
     for (let i = 0; i < unreadMessages.length; i++) {
-        messenger.messages.update(unreadMessages[i].id, {
+        await messenger.messages.update(unreadMessages[i].id, {
             "read": true
         });
     }
 }
 
-messenger.browserAction.onClicked.addListener((_tab) => {
-    markReadCurrentFolder();
+messenger.browserAction.onClicked.addListener(async (_tab) => {
+    await markReadCurrentFolder();
 });
