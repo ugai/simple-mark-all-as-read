@@ -15,6 +15,10 @@ Thunderbird >= 78.0
 2. Start Thunderbird and open the Add-ons Manager tab (*Tools menu* -> *Add-ons*).
 3. Drag and drop the archive into the Add-on Manager.
 
+## Known Issues
+
+- Sometimes multiple messages are not marked as read. 🤔🤔🤔
+
 ## License
 
 MIT License
